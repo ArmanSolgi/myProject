@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+// spoonacular api
 
 public class FindFoodWithHandler implements Command {
     private static final String API_KEY = "cd21aa3d081f452183dacbf53585b853";
@@ -45,8 +46,8 @@ public class FindFoodWithHandler implements Command {
             }
 
             JSONObject recipeObj = jsonArray.getJSONObject(0);
-            String recipeTitle = recipeObj.getString("title");
-            return recipeTitle;
+            String foodName = recipeObj.getString("title");
+            return foodName;
 
         } catch (Exception exception) {
             System.out.println(exception.getMessage());

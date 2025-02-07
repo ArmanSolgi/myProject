@@ -6,6 +6,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
+// nutritionix api
+
 public class FindEnergyOfHandler implements Command {
     private static final String API_URL = "https://trackapi.nutritionix.com/v2/natural/nutrients";
     private static final String APP_ID = "da13d288";
